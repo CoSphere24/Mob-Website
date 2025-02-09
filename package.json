@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "author": "Mob <cospherebiz@gmail.com>",
   "scripts": {
-  "build": "CI= npm run build"
+  "build": "npm run build"
 }
 }
