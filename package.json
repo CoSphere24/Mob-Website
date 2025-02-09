@@ -1,1 +1,5 @@
-return Ok("Done");
+{
+  "name": "Mob",
+  "version": "1.0.0",
+  "author": "Mob <cospherebiz@gmail.com>"
+}
