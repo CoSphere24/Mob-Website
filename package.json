@@ -1,8 +1,5 @@
 {
   "name": "Mob",
   "version": "1.0.0",
-  "author": "Mob <cospherebiz@gmail.com>",
-  "scripts": {
-  "build": "npm run build"
-}
+  "author": "Mob <cospherebiz@gmail.com>"
 }
