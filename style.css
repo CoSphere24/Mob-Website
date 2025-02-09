@@ -14,7 +14,7 @@ button {
 .container {
   min-height: 100vh;
   width: 100%;
-  background-image: url("https://st2.depositphotos.com/1594308/8889/i/380/depositphotos_88897512-stock-photo-young-people-dancing-in-the.jpg.png");
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw2c5eJHeuDip09MavnkxqFGAVsEEDs41_dg&s");
   
   overflow-x: hidden;
   transform-style: preserve-3d;
@@ -102,7 +102,7 @@ button {
 header {
   min-height: 100vh;
   width: 100%;
-  background: url("https://t4.ftcdn.net/jpg/10/12/60/71/360_F_1012607147_OgbgqdFImDzm9M16u8fgSCeQBIakZnPP.jpg") no-repeat top center / cover;
+  background: url("https://st2.depositphotos.com/1594308/8889/i/450/depositphotos_88897388-stock-photo-young-people-dancing-in-the.jpg") no-repeat top center / cover;
   position: relative;
 }
 
