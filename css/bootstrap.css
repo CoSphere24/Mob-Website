@@ -6401,12 +6401,12 @@ b, strong {
   font-weight: 700; }
 
 a {
-  color: #d81b60;
+  color: #FF5613;
   transition: all .35s; }
 
 a:hover,
 a:focus {
-  color: #d81b60 !important;
+  color: #FF5613 !important;
   outline: 0;
   text-decoration: none !important; }
 
@@ -6429,7 +6429,7 @@ section {
   color: #999; }
 
 .card-outline-primary {
-  border: solid 1px #d81b60; }
+  border: solid 1px #FF5613; }
 
 .small-xl {
   font-size: 90%; }
@@ -6444,7 +6444,7 @@ section {
 * Background Colors
 ================================================*/
 .bg-texture {
-  background: transparent radial-gradient(circle farthest-side at right bottom, #ec407a 5%, #e91e63 25%, #d81b60 80%, #c2185b 98%) repeat scroll 0% 0%; }
+  background: transparent radial-gradient(circle farthest-side at right bottom, #ec407a 5%, #e91e63 25%, #FF5613 80%, #c2185b 98%) repeat scroll 0% 0%; }
 
 .bg-texture-collage {
   background: linear-gradient(-45deg, #ec407a 33%, transparent 0%), linear-gradient(-45deg, #e91e63 67%, transparent 33%), linear-gradient(-45deg, #ec407a 100%, transparent 67%); }
@@ -6456,7 +6456,7 @@ section {
   background-color: #FAFAFA; }
 
 .bg-primary {
-  background-color: #d81b60 !important; }
+  background-color: #FF5613 !important; }
 
 .bg-footer {
   background-color: #171717; }
@@ -6477,7 +6477,7 @@ section {
   color: #fff; }
 
 .text-primary {
-  color: #d81b60 !important; }
+  color: #FF5613 !important; }
 
 .text-primary-light {
   color: #ff80ab; }
@@ -6554,7 +6554,7 @@ section {
 * Social Icons
 ================================================*/
 .text-twitter-alt, .text-facebook-alt, .text-linkedin-alt, .text-google-alt, .text-github-alt {
-  color: #d81b60; }
+  color: #FF5613; }
 
 .text-twitter, .text-twitter-alt:hover {
   color: #00aced; }
@@ -6580,7 +6580,7 @@ section {
 
 .card .card-body .icon-box {
   padding: 20px 0;
-  color: #d81b60; }
+  color: #FF5613; }
 
 .card .card-body h6 {
   padding-bottom: 15px;
@@ -6618,15 +6618,15 @@ Pricing tables & lists
   left: -25px;
   top: 8px;
   font-size: 10px;
-  color: #d81b60;
+  color: #FF5613;
   font-family: "Ionicons"; }
 
 ::-moz-selection {
   color: #fff;
   text-shadow: none;
-  background: #d81b60; }
+  background: #FF5613; }
 
 ::selection {
   color: #fff;
   text-shadow: none;
-  background: #d81b60; }
+  background: #FF5613; }
