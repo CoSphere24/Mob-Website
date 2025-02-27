@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import '../src/style.css';
+import './style.css';
 import FormApp from './FormApp';
 // import reportWebVitals from './reportWebVitals';
 
