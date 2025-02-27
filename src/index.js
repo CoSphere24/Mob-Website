@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import FormApp from '../js/FormApp';
+import FormApp from './FormApp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
