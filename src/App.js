@@ -1,6 +1,6 @@
     import React from 'react';
     import './App.css';
-    import { NavLink, Switch, Route } from 'react-router-dom';
+    import { NavLink, Routes, Route } from 'react-router-dom';
 
     const App = () => (
       <div className='app'>
