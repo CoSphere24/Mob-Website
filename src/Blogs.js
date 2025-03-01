@@ -1,20 +1,20 @@
 const Blogs = () => (
-      `<div className='blogs'>
+      <div className='blogs'>
           <head>
               <meta charset="utf-8">
               <title>Mob Blogs</title>
               <meta name="description" content="View the latest from Mob." />
               <meta name="viewport" content="width=device-width, initial-scale=1.0">
-              <!--Bootstrap 4-->
+              {/* Bootstrap 4 */} 
               <link rel="stylesheet" href="../src/bootstrap.min.css">
               <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-              <!--icons-->
+              {/* icons */} 
               <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
-              <!--favicon-->
+              {/* favicon */} 
               <link rel="icon" type="image/jpg" href="../images/favicon.png"/>
           </head>
           <body>
-              <!--header-->
+              {/* header */} 
               <nav style="background-color: #ff7842;" class="navbar navbar-expand-md navbar-dark fixed-top sticky-navigation">
                   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="ion-grid icon-sm"></span>
@@ -46,7 +46,7 @@ const Blogs = () => (
       
               <br><br><br>
       
-              <!--main section
+              {/* main section
               <section class="bg-texture hero" style="transparent radial-gradient(circle farthest-side at right bottom,#ec407a 5%,#e91e63 25%,#ff5613 80%,#c2185b 98%) repeat scroll 0 0" id="main">
                   <div class="container">
                       <div class="row d-md-flex brand">
@@ -67,7 +67,7 @@ const Blogs = () => (
                   </div>
               </section>
       
-              <!--features
+              {/* features
               <section class="bg-light" id="features">
                   <div class="container">
                       <div class="row mb-3">
@@ -161,7 +161,7 @@ const Blogs = () => (
                   </div>
               </section>
       
-              <!--download
+              {/* download
               <section class="bg-orange pt-0" id="download">
                   <div class="container">
                       <div class="row d-md-flex text-center wow fadeIn">
@@ -203,7 +203,7 @@ const Blogs = () => (
                   </div>
               </section>
       
-              <!--pricing
+              {/* pricing
               <section class="bg-light" id="pricing">
                   <div class="container">
                       <div class="row">
@@ -267,7 +267,7 @@ const Blogs = () => (
                   </div>
               </section>
       
-              <!--team
+              {/* team
               <section class="bg-white" id="team">
                   <div class="container">
                       <div class="row">
@@ -303,7 +303,7 @@ const Blogs = () => (
                   </div>
               </section>
       
-              <!--partners
+              {/* partners
               <section class="bg-white" id="partners">
                   <div class="container">
                       <div class="row">
@@ -328,8 +328,8 @@ const Blogs = () => (
                   </div>
               </section>
       
-            -->
-              <!--blog-->
+             */} 
+              {/* blog */} 
               <section class="bg-light" id="blog">
                   <div class="container">
                       <div class="row">
@@ -396,7 +396,7 @@ const Blogs = () => (
                   </div>
               </section>
       
-              <!--contact
+              {/* contact 
               <section class="bg-texture-collage p-0" id="contact">
                   <div class="container">
                       <div class="row d-md-flex text-white text-center wow fadeIn" style="justify-content:center;">
@@ -412,7 +412,7 @@ const Blogs = () => (
                   </div>
               </section>
       
-              <!--footer-->
+              {/* footer */} 
               <section class="bg-footer" id="connect">
                   <div class="container">
                       <div class="row">
@@ -439,7 +439,7 @@ const Blogs = () => (
               <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
               <script src="../src/scripts.js"></script>
           </body>
-      </div>`
+      </div>
     );
 
 
