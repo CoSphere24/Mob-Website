@@ -170,7 +170,7 @@ const Blogs = () => (
                   <div class="container-fluid">
                       <div class="row d-md-flex mt-5">
                           <div class="align-self-center col-sm-6 p-0 text-center wow fadeInLeft">
-                              <img class="img-fluid" style="padding-right: 30px;"src="https://cdn3d.iconscout.com/3d/premium/thumb/check-event-3d-icon-download-in-png-blend-fbx-gltf-file-formats--date-done-calendar-day-pack-user-interface-icons-6491365.png" alt="Gallery">
+                              <img class="img-fluid" style="padding-right: 30px;"src="https://cdn3d.iconscout.com/3d/premium/thumb/check-event-3d-icon-download-in-png-blend-fbx-gltf-file-formats--date-done-calendar-day-pack-user-interface-icons-6491365.png" alt="Gallery"/>
                           </div>
                           <div class="col-sm-6 pl-5 pr-5 pt-5 pb-4 wow fadeInRight">
                               <h3><a href="#">What's coming up in Beta 2.0?</a></h3>
@@ -330,7 +330,7 @@ const Blogs = () => (
                       <div class="row d-md-flex mt-5">
                           <div class="col-sm-4 mt-2 wow fadeIn">
                               <div class="card">
-                                  <img class="card-img-top" src="https://media.istockphoto.com/id/517131390/photo/happy-young-friends-partying-with-drinks-and-confetti-in-nightclub.jpg?s=612x612&w=0&k=20&c=t0bhMdoWYz2XQiimDfVBJgiRvkqbwx-g8SH9oMFGpyk=" alt="Image">
+                                  <img class="card-img-top" src="https://media.istockphoto.com/id/517131390/photo/happy-young-friends-partying-with-drinks-and-confetti-in-nightclub.jpg?s=612x612&w=0&k=20&c=t0bhMdoWYz2XQiimDfVBJgiRvkqbwx-g8SH9oMFGpyk=" alt="Image"/>
                                   <div class="card-body">
                                       <p class="card-text text-muted small-xl">
                                           <em class="ion-ios-calendar-outline"></em> 22h ago &nbsp;&nbsp;
@@ -347,7 +347,7 @@ const Blogs = () => (
                           </div>
                           <div class="col-sm-4 mt-2 wow fadeIn">
                               <div class="card">
-                                  <img class="card-img-top" src="https://media.istockphoto.com/id/517131390/photo/happy-young-friends-partying-with-drinks-and-confetti-in-nightclub.jpg?s=612x612&w=0&k=20&c=t0bhMdoWYz2XQiimDfVBJgiRvkqbwx-g8SH9oMFGpyk=" alt="Image">
+                                  <img class="card-img-top" src="https://media.istockphoto.com/id/517131390/photo/happy-young-friends-partying-with-drinks-and-confetti-in-nightclub.jpg?s=612x612&w=0&k=20&c=t0bhMdoWYz2XQiimDfVBJgiRvkqbwx-g8SH9oMFGpyk=" alt="Image"/>
                                   <div class="card-body">
                                       <p class="card-text text-muted small-xl">
                                           <em class="ion-ios-calendar-outline"></em> 1week ago &nbsp;&nbsp;
@@ -364,7 +364,7 @@ const Blogs = () => (
                           </div>
                           <div class="col-sm-4 mt-2 wow fadeIn">
                               <div class="card">
-                                  <img class="card-img-top" src="https://media.istockphoto.com/id/517131390/photo/happy-young-friends-partying-with-drinks-and-confetti-in-nightclub.jpg?s=612x612&w=0&k=20&c=t0bhMdoWYz2XQiimDfVBJgiRvkqbwx-g8SH9oMFGpyk=" alt="Image">
+                                  <img class="card-img-top" src="https://media.istockphoto.com/id/517131390/photo/happy-young-friends-partying-with-drinks-and-confetti-in-nightclub.jpg?s=612x612&w=0&k=20&c=t0bhMdoWYz2XQiimDfVBJgiRvkqbwx-g8SH9oMFGpyk=" alt="Image"/>
                                   <div class="card-body">
                                       <p class="card-text text-muted small-xl">
                                           <em class="ion-ios-calendar-outline"></em> 1mon ago &nbsp;&nbsp;
