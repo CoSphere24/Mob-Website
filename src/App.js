@@ -1,9 +1,9 @@
     import React from 'react';
+    import './bootstrap.css';
+    import './bootstrap.min.css';
     import './App.css';
     import './_custom.scss';
     import './_variables.scss';
-    import './bootstrap.css';
-    import './bootstrap.min.css';
     import { NavLink, Routes, Route } from 'react-router-dom';
     import Blogs from './Blogs';
 
