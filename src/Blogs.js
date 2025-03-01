@@ -1,5 +1,5 @@
 const Blogs = () => (
-      <div className='blogs'>
+      `<div className='blogs'>
           <head>
               <meta charset="utf-8">
               <title>Mob Blogs</title>
@@ -439,7 +439,7 @@ const Blogs = () => (
               <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
               <script src="../src/scripts.js"></script>
           </body>
-      </div>
+      </div>`
     );
 
 
