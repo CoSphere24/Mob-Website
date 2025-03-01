@@ -1,7 +1,7 @@
     import React from 'react';
     import './App.css';
     import { NavLink, Routes, Route } from 'react-router-dom';
-    import About from './About';
+    import Blogs from './Blogs';
 
     const App = () => (
       <div className='app'>
@@ -15,7 +15,7 @@
       <nav>
         <ul>
           <li><NavLink exact activeClassName="current" to='/'>Home</NavLink></li>
-          <li><NavLink exact activeClassName="current" to='/about'>About</NavLink></li>
+          <li><NavLink exact activeClassName="current" to='/blogs'>Blogs</NavLink></li>
           <li><NavLink exact activeClassName="current" to='/contact'>Contact</NavLink></li>
         </ul>
       </nav>
@@ -38,7 +38,7 @@
     const Main = () => (
       <Routes>
         <Route exact path='/' element={<Home/>}></Route>
-        <Route exact path='/about' element={<About/>}></Route>
+        <Route exact path='/blogs' element={<Blogs/>}></Route>
         <Route exact path='/contact' element={<Contact/>}></Route>
       </Routes>
     );
