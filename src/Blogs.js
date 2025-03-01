@@ -31,7 +31,7 @@ const Blogs = () => (
                   </div>
               </nav>
       
-              <br><br><br>
+              <br/><br/><br/>
       
               {/* main section
               <section class="bg-texture hero" style="transparent radial-gradient(circle farthest-side at right bottom,#ec407a 5%,#e91e63 25%,#ff5613 80%,#c2185b 98%) repeat scroll 0 0" id="main">
