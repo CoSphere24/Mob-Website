@@ -43,11 +43,11 @@
     );
 
     const Main = () => (
-      <Switch>
-        <Route exact path='/' component={Home}></Route>
-        <Route exact path='/about' component={About}></Route>
-        <Route exact path='/contact' component={Contact}></Route>
-      </Switch>
+      <Routes>
+        <Route exact path='/' element={<Home/>}></Route>
+        <Route exact path='/about' element={<About/>}></Route>
+        <Route exact path='/contact' element={<Contact/>}></Route>
+      </Routes>
     );
 
 
