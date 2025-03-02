@@ -24,10 +24,10 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mr-3">
-                        <NavLink exact className="nav-link page-scroll" activeClassName="current" to='#product'>Product <span class="sr-only">(current)</span></NavLink>
+                        <NavLink exact className="nav-link page-scroll" activeClassName="current" to='#product'>Product</NavLink>
                     </li>
                     <li class="nav-item mr-3">
-                        <a class="nav-link page-scroll" href="#features">Features</a>
+                        <NavLink exact className="nav-link page-scroll" activeClassName="current" to='#features'>Features</NavLink>
                     </li>
                     <li class="nav-item mr-3">
                         <a class="nav-link page-scroll" href="#pricing">Pricing</a>
