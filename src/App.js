@@ -6,7 +6,7 @@
     import './App.css';
     import { NavLink, Routes, Route } from 'react-router-dom';
     import Blogs from './Blogs';
-    import Scripts from './scripts';
+    //import * from './scripts';
 
     const App = () => (
       <div className='app'>
