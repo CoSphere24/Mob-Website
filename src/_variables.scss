@@ -29,6 +29,15 @@ $cyan: #17a2b8;
 
 // Theme Colors
 
+$primary: $blue;
+$secondary: $gray-600;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-800;
+
 $theme-colors: ();
 $theme-colors: map-merge((
 	"primary": $primary,
@@ -41,16 +50,6 @@ $theme-colors: map-merge((
 	"dark": $dark,
 ), $theme-colors);
 $theme-color-interval: 8%;
-
-$primary: $blue;
-$secondary: $gray-600;
-$success: $green;
-$info: $cyan;
-$warning: $yellow;
-$danger: $red;
-$light: $gray-100;
-$dark: $gray-800;
-
 
 
 //
