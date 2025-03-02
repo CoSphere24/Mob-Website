@@ -24,7 +24,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mr-3">
-                        <NavLink exact activeClassName="current" to='/'><a class="nav-link page-scroll">Product <span class="sr-only">(current)</span></a></NavLink>
+                        <NavLink exact activeClassName="current" to='/blogs'><a class="nav-link page-scroll">Product <span class="sr-only">(current)</span></a></NavLink>
                     </li>
                     <li class="nav-item mr-3">
                         <a class="nav-link page-scroll" href="#features">Features</a>
@@ -44,13 +44,13 @@
                 </ul>
             </div>
         </nav>
-      <nav>
-        <ul>
-          <li><NavLink exact activeClassName="current" to='/'>Home</NavLink></li>
-          <li><NavLink exact activeClassName="current" to='/blogs'>Blogs</NavLink></li>
-          <li><NavLink exact activeClassName="current" to='/contact'>Contact</NavLink></li>
-        </ul>
-      </nav>
+      //<nav>
+      //  <ul>
+      //    <li><NavLink exact activeClassName="current" to='/'>Home</NavLink></li>
+      //    <li><NavLink exact activeClassName="current" to='/blogs'>Blogs</NavLink></li>
+      //    <li><NavLink exact activeClassName="current" to='/contact'>Contact</NavLink></li>
+      //  </ul>
+      //</nav>
     );
 
     const Home = () => (
