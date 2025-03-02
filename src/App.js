@@ -236,7 +236,7 @@
                                 <p class="card-text text-muted pb-3 border-bottom">per month</p>
                                 <ul class="list-unstyled pricing-list">
                                     <li>Unlimited events</li>
-                                    <li>Attendee insights <em style="color: #ff7842;" class="ion-information-circled icon-xs"></em></li>
+                                    <li>Attendee insights <em class="ion-information-circled icon-xs"></em></li>
                                     <li>Custom impression support</li>
                                     <li>À la carte event features</li>
                                 </ul>
@@ -356,7 +356,7 @@
                                 
         <section class="bg-texture-collage p-0" id="contact">
             <div class="container">
-                <div class="row d-md-flex text-white text-center wow fadeIn" style="justify-content:center;">
+                <div class="row d-md-flex text-white text-center wow fadeIn">
                     <div class="col-sm-4 p-5">
                         <p><em class="ion-ios-email-outline icon-md"></em></p>
                         <p class="lead">cospherebiz@gmail.com</p>
