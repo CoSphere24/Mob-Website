@@ -24,7 +24,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mr-3">
-                        <NavLink exact activeClassName="current" to='#product'><a class="nav-link page-scroll">Product <span class="sr-only">(current)</span></a></NavLink>
+                        <NavLink exact className="nav-link page-scroll" activeClassName="current" to='#product'>Product <span class="sr-only">(current)</span></NavLink>
                     </li>
                     <li class="nav-item mr-3">
                         <a class="nav-link page-scroll" href="#features">Features</a>
@@ -55,8 +55,25 @@
 
     const Home = () => (
       <div className='home'>
-        <h1>Welcome to my portfolio website</h1>
-        <p> Feel free to browse around and learn more about me.</p>
+        <section class="bg-texture hero" style="transparent radial-gradient(circle farthest-side at right bottom,#ec407a 5%,#e91e63 25%,#ff5613 80%,#c2185b 98%) repeat scroll 0 0" id="main">
+            <div class="container">
+                <div class="row d-md-flex brand">
+                    <div class="col-md-6 hidden-sm-down wow fadeIn">
+                        <img class="img-fluid mx-auto d-block" style="padding-right: 30px" src="https://cdn3d.iconscout.com/3d/premium/thumb/camera-3d-icon-download-in-png-blend-fbx-gltf-file-formats--dslr-digital-photography-photo-device-summer-holiday-pack-holidays-icons-5058701.png"/>
+                    </div>
+                    <div class="col-md-6 col-sm-12 text-white wow fadeIn">
+                        <h2 class="pt-4">This is <b class="text-primary-light">not </b> a dating app.</h2>
+                        <p class="mt-5">
+                            We're tired of apps that don't connect us the way we want to, and we think you are too.
+                        </p>
+                        <p class="mt-5">
+                            <a href="#download" class="btn btn-primary mr-2 mb-2 page-scroll">Try the Beta</a>
+                            <a href="#features" class="btn btn-white mb-2 page-scroll">Learn More</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
       </div>
     );
 
