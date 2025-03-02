@@ -24,7 +24,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mr-3">
-                        <NavLink exact activeClassName="current"><a class="nav-link page-scroll" href="#product">Product <span class="sr-only">(current)</span></a></NavLink>
+                        <NavLink exact activeClassName="current" to='#product'><a class="nav-link page-scroll">Product <span class="sr-only">(current)</span></a></NavLink>
                     </li>
                     <li class="nav-item mr-3">
                         <a class="nav-link page-scroll" href="#features">Features</a>
