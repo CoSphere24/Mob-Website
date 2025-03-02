@@ -55,11 +55,11 @@
 
     const Home = () => (
       <div className='home'>
-        <section class="bg-texture hero" style="transparent radial-gradient(circle farthest-side at right bottom,#ec407a 5%,#e91e63 25%,#ff5613 80%,#c2185b 98%) repeat scroll 0 0" id="main">
+        <section class="bg-texture hero" id="main">
             <div class="container">
                 <div class="row d-md-flex brand">
                     <div class="col-md-6 hidden-sm-down wow fadeIn">
-                        <img class="img-fluid mx-auto d-block" style="padding-right: 30px" src="https://cdn3d.iconscout.com/3d/premium/thumb/camera-3d-icon-download-in-png-blend-fbx-gltf-file-formats--dslr-digital-photography-photo-device-summer-holiday-pack-holidays-icons-5058701.png"/>
+                        <img class="img-fluid mx-auto d-block" src="https://cdn3d.iconscout.com/3d/premium/thumb/camera-3d-icon-download-in-png-blend-fbx-gltf-file-formats--dslr-digital-photography-photo-device-summer-holiday-pack-holidays-icons-5058701.png"/>
                     </div>
                     <div class="col-md-6 col-sm-12 text-white wow fadeIn">
                         <h2 class="pt-4">This is <b class="text-primary-light">not </b> a dating app.</h2>
