@@ -1,8 +1,8 @@
     import React from 'react';
-    import './_variables.scss';
     import './bootstrap.css';
     import './bootstrap.min.css';
     import './App.css';
+    import './_variables.scss';
     import './_custom.scss';
     import { NavLink, Routes, Route } from 'react-router-dom';
     import Blogs from './Blogs';
