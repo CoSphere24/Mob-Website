@@ -17,6 +17,7 @@ import { Container, FloatingLabel, Row, Col } from 'react-bootstrap';
 
 const SubmitEvent = () => (
       <div className='SubmitEvent'>
+            <FormApp/>
       </div>
     );
 
