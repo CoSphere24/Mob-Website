@@ -37,6 +37,7 @@ function EventFormApp() {
         <h2 style={{ marginBottom: '15px', textAlign: 'center' }}>
           Submit New Event
         </h2>
+        <br/><br/>
         <Container fluid>
           <Row>
             <Col sm={6} style={{ marginBottom: '10px' }}>
@@ -88,6 +89,7 @@ function EventFormApp() {
                   onChange={(date) => setStartDate(date)}
                   startDate={startDate}
                   className="form-control"
+                  wrapperClassName="form-control"
                 />
               </FloatingLabel>
             </Col>
@@ -100,6 +102,7 @@ function EventFormApp() {
                   endDate={endDate}
                   startDate={startDate}
                   minDate={startDate}
+                  className="form-control"
                 />
               </FloatingLabel>
             </Col>
