@@ -9,6 +9,7 @@ import './bootstrap.css';
 const SubmitEvent = () => (
       <div className='SubmitEvent'>
             <section class="bg-light">
+                  <br/><br/>
                   <div class="container">
                         <EventFormApp/>
                   </div>
