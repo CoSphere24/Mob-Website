@@ -8,10 +8,11 @@ import './bootstrap.css';
 
 const SubmitEvent = () => (
       <div className='SubmitEvent'>
-        </section>
-            <div class="container">
-                  <EventFormApp/>
-            </div>
+            <section class="bg-light">
+                  <div class="container">
+                        <EventFormApp/>
+                  </div>
+            </section>
       </div>
     );
 
