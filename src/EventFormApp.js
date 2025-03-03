@@ -92,76 +92,34 @@ function EventFormApp() {
           </Row>
 
           <Row>
-            <Form.Group className='mb-3' controlId='formBasicPassword'>
-              <FloatingLabel controlId='passwordLabel' label='Password'>
-                <Form.Control
-                  type='password'
-                  placeholder='Password'
-                  required
-                  pattern='^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$'
-                  onChange={(e) => handlePasswordChange(e.target.value)}
-                />
+            <Col sm={6} style={{ marginBottom: '10px' }}>
+              <FloatingLabel controlId='eventnameLabel' label='Event name'>
+                <Form.Control type='text' placeholder='Event name' required />
               </FloatingLabel>
-              <div
-                style={{
-                  height: '24px',
-                  marginTop: '5px',
-                  backgroundColor: 'hsl(0, 0%, 74%)',
-                  borderRadius: '5px',
-                }}
-              >
-                <div
-                  ref={progressBar}
-                  style={{
-                    height: '100%',
-                    borderRadius: '5px',
-                    maxWidth: '100%',
-                  }}
-                ></div>
-              </div>
-              <Form.Text className='text-muted'>
-                Must be 8 characters long, contain a number, an uppercase letter
-                and a special character.
-              </Form.Text>
-            </Form.Group>
+            </Col>
           </Row>
 
           <Row>
-            <Form.Group className='mb-3' controlId='formBasicConfirmation'>
-              <FloatingLabel controlId='confirmationLabel' label='Confirmation'>
-                <Form.Control
-                  type='password'
-                  placeholder='Confirmation'
-                  required
-                  onChange={(e) => setConfirmation(e.target.value)}
+            <Col sm={6} style={{ marginBottom: '10px' }}>
+              <Form.Group className='mb-3' controlId='formBasicNewsletter'>
+                <Form.Check
+                  type='checkbox'
+                  label='Sign me up for the Mob newsletter!'
                 />
-              </FloatingLabel>
-              <p
-                style={{ color: 'red', display: 'none' }}
-                ref={confirmationError}
-              >
-                Password and confirmation are not the same
-              </p>
-            </Form.Group>
+              </Form.Group>
+             </Col>
           </Row>
 
           <Row>
-            <Form.Group className='mb-3' controlId='formBasicNewsletter'>
-              <Form.Check
-                type='checkbox'
-                label='I want to recieve the newsletter'
-              />
-            </Form.Group>
-          </Row>
-
-          <Row>
-            <Form.Group className='mb-3' controlId='formBasicFollow'>
-              <Form.Check
-                type='checkbox'
-                label='I follow @AnesHodza on Twitter'
-                required
-              />
-            </Form.Group>
+            <Col sm={6} style={{ marginBottom: '10px' }}>
+              <Form.Group className='mb-3' controlId='formBasicFollow'>
+                <Form.Check
+                  type='checkbox'
+                  label='I agree to the Terms & Conditions'
+                  required
+                />
+              </Form.Group>
+            </Col>
           </Row>
 
           <Button variant='primary' type='submit'>
