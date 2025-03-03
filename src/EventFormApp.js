@@ -7,6 +7,7 @@ import Button from 'react-bootstrap/Button';
 //import './style.css';
 import { Container, FloatingLabel, Row, Col } from 'react-bootstrap';
 import DatePicker from "react-datepicker";
+import TimePicker from 'react-time-picker';
 import "react-datepicker/dist/react-datepicker.css";
 
 function EventFormApp() {
@@ -94,7 +95,7 @@ function EventFormApp() {
               </FloatingLabel>
             </Col>
             <Col sm={6} style={{ marginBottom: '10px' }}>
-              <FloatingLabel controlId='eventStartDateLabel' label='Event end date'>
+              <FloatingLabel controlId='eventEndDateLabel' label='Event end date'>
                 <DatePicker
                   selectsEnd
                   selected={endDate}
@@ -103,6 +104,26 @@ function EventFormApp() {
                   startDate={startDate}
                   minDate={startDate}
                   className="form-control"
+                  wrapperClassName="form-control"
+                />
+              </FloatingLabel>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col sm={6} style={{ marginBottom: '10px' }}>
+              <FloatingLabel controlId='eventStartTimeLabel' label='Event start time'>
+                <TimePicker
+                  onChange={this.onChange}
+                  format='hh:mm a'
+                />
+              </FloatingLabel>
+            </Col>
+            <Col sm={6} style={{ marginBottom: '10px' }}>
+              <FloatingLabel controlId='eventEndTimeLabel' label='Event end time'>
+                <TimePicker
+                  onChange={this.onChange}
+                  format='hh:mm a'
                 />
               </FloatingLabel>
             </Col>
