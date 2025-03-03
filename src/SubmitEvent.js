@@ -8,7 +8,6 @@ import './bootstrap.css';
 
 const SubmitEvent = () => (
       <div className='SubmitEvent'>
-        <section class="bg-texture hero">
         </section>
             <div class="container">
                   <EventFormApp/>
