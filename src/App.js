@@ -7,6 +7,7 @@
     import { NavLink, Routes, Route } from 'react-router-dom';
     import Home from './Home';
     import Blogs from './Blogs';
+    import Submit-Event from './Submit-Event';
     //import * from './scripts';
 
     const App = () => (
@@ -58,6 +59,7 @@
       <Routes>
         <Route exact path='/' element={<Home/>}></Route>
         <Route exact path='/blogs' element={<Blogs/>}></Route>
+        <Route exact path='/submit-event' element={<Submit-Event/>}></Route>
         <Route exact path='/contact' element={<Contact/>}></Route>
       </Routes>
     );
