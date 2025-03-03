@@ -6,24 +6,20 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 //import './style.css';
 import { Container, FloatingLabel, Row, Col } from 'react-bootstrap';
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 function EventFormApp() {
   const [validated, setValidated] = useState(false);
   const [password, setPassword] = useState('');
   const [confirmation, setConfirmation] = useState('');
   const confirmationError = useRef(null);
-  const progressBar = useRef(null);
+  const [date, setDate] = useState(new Date());
+  const [startDate, setStartDate] = useState();
+  const [endDate, setEndDate] = useState();
 
   const handleSubmit = (event) => {
     const form = event.currentTarget;
-
-    if (password !== confirmation) {
-      event.preventDefault();
-      event.stopPropagation();
-      confirmationError.current.style.display = null;
-    } else {
-      confirmationError.current.style.display = 'none';
-    }
 
     if (form.checkValidity() === false) {
       event.preventDefault();
@@ -33,23 +29,7 @@ function EventFormApp() {
     setValidated(true);
   };
 
-  const handlePasswordChange = (password) => {
-    setPassword(password);
-    const letterMatch = (password.match(/[a-z, A-Z]/g) || []).length;
-    const numberMatch = (password.match(/[0-9]/g) || []).length;
-    const specialMatch = (password.match(/[#?!@$%^&*-]/g) || []).length;
-
-    const strength = letterMatch + numberMatch * 2 + specialMatch * 3;
-    progressBar.current.style.width = `${strength * 3}%`;
-    let color = 'red';
-    if (strength > 10) {
-      color = 'orange';
-    }
-    if (strength > 26) {
-      color = 'green';
-    }
-    progressBar.current.style.backgroundColor = color;
-  };
+  
 
   return (
     <div className='form-wrapper'>
@@ -95,6 +75,31 @@ function EventFormApp() {
             <Col sm={6} style={{ marginBottom: '10px' }}>
               <FloatingLabel controlId='eventnameLabel' label='Event name'>
                 <Form.Control type='text' placeholder='Event name' required />
+              </FloatingLabel>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col sm={6} style={{ marginBottom: '10px' }}>
+              <FloatingLabel controlId='eventStartDateLabel' label='Event start date'>
+                <DatePicker
+                  selectsStart
+                  selected={startDate}
+                  onChange={(date) => setStartDate(date)}
+                  startDate={startDate}
+                />
+              </FloatingLabel>
+            </Col>
+            <Col sm={6} style={{ marginBottom: '10px' }}>
+              <FloatingLabel controlId='eventStartDateLabel' label='Event end date'>
+                <DatePicker
+                  selectsEnd
+                  selected={endDate}
+                  onChange={(date) => setEndDate(date)}
+                  endDate={endDate}
+                  startDate={startDate}
+                  minDate={startDate}
+                />
               </FloatingLabel>
             </Col>
           </Row>
