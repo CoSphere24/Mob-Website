@@ -78,7 +78,7 @@ function EventFormApp() {
 
           <Row>
             <Col sm={6} style={{ marginBottom: '10px' }}>
-              <Form.Group className='mb-3' controlId='formBasicEmail'>
+              <Form.Group controlId='formBasicEmail'>
                 <FloatingLabel controlId='emailLabel' label='Enter email'>
                   <Form.Control
                     type='email'
