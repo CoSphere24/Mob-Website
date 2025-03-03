@@ -323,4 +323,4 @@ const Home = () => (
       </div>
     );
 
-default export Home;
+export default Home;
