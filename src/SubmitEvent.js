@@ -17,6 +17,8 @@ import { Container, FloatingLabel, Row, Col } from 'react-bootstrap';
 
 const SubmitEvent = () => (
       <div className='SubmitEvent'>
+        <section class="bg-texture hero">
+        </section>
             <FormApp/>
       </div>
     );
