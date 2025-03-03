@@ -8,7 +8,7 @@ const domNode = document.getElementById('formapp');
 const root = createRoot(domNode);
 root.render(<FormApp />);
 
-const Submit-Event = () => (
+const SubmitEvent = () => (
       <div className='SubmitEvent' id='formapp'>
       </div>
     );
