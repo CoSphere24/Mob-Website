@@ -77,19 +77,18 @@ function EventFormApp() {
           </Row>
 
           <Row>
-            <Form.Group className='mb-3' controlId='formBasicEmail'>
-              <FloatingLabel controlId='emailLabel' label='Enter email'>
-                <Form.Control
-                  type='email'
-                  placeholder='Enter email'
-                  required
-                  pattern='^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'
-                />
-              </FloatingLabel>
-              <Form.Text className='text-muted'>
-                We'll (hopefully) never share your email with anyone else.
-              </Form.Text>
-            </Form.Group>
+            <Col sm={6} style={{ marginBottom: '10px' }}>
+              <Form.Group className='mb-3' controlId='formBasicEmail'>
+                <FloatingLabel controlId='emailLabel' label='Enter email'>
+                  <Form.Control
+                    type='email'
+                    placeholder='Enter email'
+                    required
+                    pattern='^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'
+                  />
+                </FloatingLabel>
+              </Form.Group>
+            </Col>
           </Row>
 
           <Row>
