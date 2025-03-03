@@ -4,9 +4,9 @@ import { createRoot } from 'react-dom/client';
 import './bootstrap.min.css';
 import FormApp from './FormApp';
 
-const domNode = document.getElementById('formapp');
-const root = createRoot(domNode);
-root.render(<FormApp />);
+const domNodeForm = document.getElementById('formapp');
+const rootForm = createRoot(domNodeForm);
+rootForm.render(<FormApp />);
 
 const SubmitEvent = () => (
       <div className='SubmitEvent' id='formapp'>
