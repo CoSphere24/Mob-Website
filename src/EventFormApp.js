@@ -18,6 +18,7 @@ function EventFormApp() {
   const [date, setDate] = useState(new Date());
   const [startDate, setStartDate] = useState();
   const [endDate, setEndDate] = useState();
+  const [timeValue, onTimeChange] = useState('10:00');
 
   const handleSubmit = (event) => {
     const form = event.currentTarget;
@@ -114,7 +115,7 @@ function EventFormApp() {
             <Col sm={6} style={{ marginBottom: '10px' }}>
               <FloatingLabel controlId='eventStartTimeLabel' label='Event start time'>
                 <TimePicker
-                  onChange={onChange} value={value}
+                  onTimeChange={onTimeChange} timeValue={timeValue}
                   format='hh:mm a'
                 />
               </FloatingLabel>
@@ -122,7 +123,7 @@ function EventFormApp() {
             <Col sm={6} style={{ marginBottom: '10px' }}>
               <FloatingLabel controlId='eventEndTimeLabel' label='Event end time'>
                 <TimePicker
-                  onChange={onChange} value={value}
+                  onTimeChange={onTimeChange} timeValue={timeValue}
                   format='hh:mm a'
                 />
               </FloatingLabel>
