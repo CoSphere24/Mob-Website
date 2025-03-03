@@ -55,7 +55,7 @@ function EventFormApp() {
     <div className='form-wrapper'>
       <Form noValidate validated={validated} onSubmit={handleSubmit}>
         <h2 style={{ marginBottom: '15px', textAlign: 'center' }}>
-          Sign up a new user
+          Submit New Event
         </h2>
         <Container fluid>
           <Row>
