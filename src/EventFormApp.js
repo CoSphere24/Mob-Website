@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 //import './style.css';
 import { Container, FloatingLabel, Row, Col } from 'react-bootstrap';
 
-function FormApp() {
+function EventFormApp() {
   const [validated, setValidated] = useState(false);
   const [password, setPassword] = useState('');
   const [confirmation, setConfirmation] = useState('');
@@ -174,4 +174,4 @@ function FormApp() {
   );
 }
 
-export default FormApp;
+export default EventFormApp;
