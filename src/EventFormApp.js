@@ -19,10 +19,6 @@ function EventFormApp() {
   const [startDate, setStartDate] = useState();
   const [endDate, setEndDate] = useState();
 
-  handleInputChange = (searchTerm) => {
-    processedQuery = searchTerm.split(' ').join('+');
-  }
-
   const handleSubmit = (event) => {
     const form = event.currentTarget;
 
@@ -118,7 +114,7 @@ function EventFormApp() {
             <Col sm={6} style={{ marginBottom: '10px' }}>
               <FloatingLabel controlId='eventStartTimeLabel' label='Event start time'>
                 <TimePicker
-                  onChange={event => this.props.handleInputChange(event.target.value)}
+                  onChange={onChange} value={value}
                   format='hh:mm a'
                 />
               </FloatingLabel>
@@ -126,7 +122,7 @@ function EventFormApp() {
             <Col sm={6} style={{ marginBottom: '10px' }}>
               <FloatingLabel controlId='eventEndTimeLabel' label='Event end time'>
                 <TimePicker
-                  onChange={event => this.props.handleInputChange(event.target.value)}
+                  onChange={onChange} value={value}
                   format='hh:mm a'
                 />
               </FloatingLabel>
