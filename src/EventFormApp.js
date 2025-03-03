@@ -9,6 +9,8 @@ import { Container, FloatingLabel, Row, Col } from 'react-bootstrap';
 import DatePicker from "react-datepicker";
 import TimePicker from 'react-time-picker';
 import "react-datepicker/dist/react-datepicker.css";
+import 'react-time-picker/dist/TimePicker.css';
+import 'react-clock/dist/Clock.css';
 
 function EventFormApp() {
   const [validated, setValidated] = useState(false);
