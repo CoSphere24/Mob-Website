@@ -82,11 +82,12 @@ function EventFormApp() {
           <Row>
             <Col sm={6} style={{ marginBottom: '10px' }}>
               <FloatingLabel controlId='eventStartDateLabel' label='Event start date'>
-                <DatePicker
+                <DatePicker 
                   selectsStart
                   selected={startDate}
                   onChange={(date) => setStartDate(date)}
                   startDate={startDate}
+                  className="form-control"
                 />
               </FloatingLabel>
             </Col>
