@@ -9,8 +9,8 @@ const root = createRoot(domNode);
 root.render(<FormApp />);
 
 const Submit-Event = () => (
-      <div className='Submit-Event' id='formapp'>
+      <div className='SubmitEvent' id='formapp'>
       </div>
     );
 
-export default Submit-Event;
+export default SubmitEvent;
