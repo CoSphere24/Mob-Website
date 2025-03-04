@@ -119,25 +119,6 @@ function EventFormApp() {
           <Row>
             <Col sm={6} style={{ marginBottom: '10px' }}>
               <FloatingLabel controlId='eventStartTimeLabel' label='Event start time'>
-                <TimePicker
-                  onTimeChange={onTimeChange} timeValue={timeValue}
-                  format='hh:mm a'
-                />
-              </FloatingLabel>
-            </Col>
-            <Col sm={6} style={{ marginBottom: '10px' }}>
-              <FloatingLabel controlId='eventEndTimeLabel' label='Event end time'>
-                <TimePicker
-                  onTimeChange={onTimeChange} timeValue={timeValue}
-                  format='hh:mm a'
-                />
-              </FloatingLabel>
-            </Col>
-          </Row>
-
-          <Row>
-            <Col sm={6} style={{ marginBottom: '10px' }}>
-              <FloatingLabel controlId='eventStartTimeLabel' label='Event start time'>
                 <DateTimePicker
                   onTimeChange={onTimeChange} timeValue={timeValue}
                 />
