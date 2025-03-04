@@ -128,6 +128,7 @@ function EventFormApp() {
               <FloatingLabel controlId='eventEndTimeLabel' label='Event end time'>
                 <DateTimePicker
                   onTimeChange={onTimeChange} timeValue={timeValue}
+                  className="form-control"
                 />
               </FloatingLabel>
             </Col>
