@@ -14,7 +14,7 @@ const Blogs = () => (
                       <div class="row d-md-flex mt-5">
                           <div class="col-sm-4 mt-2 wow fadeIn">
                               <div class="card">
-                                  <img class="card-img-top" src="https://media.istockphoto.com/id/517131390/photo/happy-young-friends-partying-with-drinks-and-confetti-in-nightclub.jpg?s=612x612&w=0&k=20&c=t0bhMdoWYz2XQiimDfVBJgiRvkqbwx-g8SH9oMFGpyk=" alt="Image">
+                                  <img class="card-img-top" src="https://media.istockphoto.com/id/517131390/photo/happy-young-friends-partying-with-drinks-and-confetti-in-nightclub.jpg?s=612x612&w=0&k=20&c=t0bhMdoWYz2XQiimDfVBJgiRvkqbwx-g8SH9oMFGpyk=" alt="Image"/>
                                   <div class="card-body">
                                       <p class="card-text text-muted small-xl">
                                           <em class="ion-ios-calendar-outline"></em> 22h ago &nbsp;&nbsp;
@@ -31,7 +31,7 @@ const Blogs = () => (
                           </div>
                           <div class="col-sm-4 mt-2 wow fadeIn">
                               <div class="card">
-                                  <img class="card-img-top" src="https://media.istockphoto.com/id/517131390/photo/happy-young-friends-partying-with-drinks-and-confetti-in-nightclub.jpg?s=612x612&w=0&k=20&c=t0bhMdoWYz2XQiimDfVBJgiRvkqbwx-g8SH9oMFGpyk=" alt="Image">
+                                  <img class="card-img-top" src="https://media.istockphoto.com/id/517131390/photo/happy-young-friends-partying-with-drinks-and-confetti-in-nightclub.jpg?s=612x612&w=0&k=20&c=t0bhMdoWYz2XQiimDfVBJgiRvkqbwx-g8SH9oMFGpyk=" alt="Image"/>
                                   <div class="card-body">
                                       <p class="card-text text-muted small-xl">
                                           <em class="ion-ios-calendar-outline"></em> 1week ago &nbsp;&nbsp;
@@ -48,7 +48,7 @@ const Blogs = () => (
                           </div>
                           <div class="col-sm-4 mt-2 wow fadeIn">
                               <div class="card">
-                                  <img class="card-img-top" src="https://media.istockphoto.com/id/517131390/photo/happy-young-friends-partying-with-drinks-and-confetti-in-nightclub.jpg?s=612x612&w=0&k=20&c=t0bhMdoWYz2XQiimDfVBJgiRvkqbwx-g8SH9oMFGpyk=" alt="Image">
+                                  <img class="card-img-top" src="https://media.istockphoto.com/id/517131390/photo/happy-young-friends-partying-with-drinks-and-confetti-in-nightclub.jpg?s=612x612&w=0&k=20&c=t0bhMdoWYz2XQiimDfVBJgiRvkqbwx-g8SH9oMFGpyk=" alt="Image"/>
                                   <div class="card-body">
                                       <p class="card-text text-muted small-xl">
                                           <em class="ion-ios-calendar-outline"></em> 1mon ago &nbsp;&nbsp;
