@@ -83,13 +83,13 @@ function EventFormApp() {
             </Col>
           </Row>
 
-          <Row>
-            <Col sm={6} style={{ marginBottom: '10px' }}>
-              <FloatingLabel controlId='eventnameLabel' label='Event name'>
-                <Form.Control type='text' placeholder='Event name' required />
-              </FloatingLabel>
-            </Col>
-          </Row>
+            <Row>
+              <Col sm={6} style={{ marginBottom: '10px' }}>
+                <FloatingLabel controlId='eventnameLabel' label='Event name'>
+                  <Form.Control type='text' placeholder='Event name' required />
+                </FloatingLabel>
+              </Col>
+            </Row>
 
           <Row>
             <Col sm={6} style={{ marginBottom: '10px' }}>
@@ -123,8 +123,12 @@ function EventFormApp() {
           <Row>
             <Col sm={6} style={{ marginBottom: '10px' }}>
               <FloatingLabel controlId='eventStartTimeLabel' label='Event start time'>
-                <DateTimePicker
-                  onTimeChange={onTimeChange} timeValue={timeValue}
+                <TimePicker 
+                  style={{ width: 100, display: "block" }}
+                  showSecond={false}
+                  timeValue={timeValue}
+                  use12Hours
+                  onTimeChange={onTimeChange}
                 />
               </FloatingLabel>
             </Col>
@@ -137,6 +141,14 @@ function EventFormApp() {
                   use12Hours
                   onTimeChange={onTimeChange}
                 />
+              </FloatingLabel>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col sm={6} style={{ marginBottom: '10px' }}>
+              <FloatingLabel controlId='eventDescLabel' label='Event description'>
+                <Form.Control type='text' rows={3} placeholder='Event name' required />
               </FloatingLabel>
             </Col>
           </Row>
