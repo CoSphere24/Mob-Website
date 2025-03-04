@@ -148,7 +148,7 @@ function EventFormApp() {
           <Row>
             <Col sm={6} style={{ marginBottom: '10px' }}>
               <FloatingLabel controlId='eventDescLabel' label='Event description'>
-                <Form.Control type='text' rows={3} placeholder='Event name' required />
+                <Form.Control as="textarea" rows={3} required />
               </FloatingLabel>
             </Col>
           </Row>
