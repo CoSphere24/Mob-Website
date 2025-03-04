@@ -131,7 +131,7 @@ function EventFormApp() {
             <Col sm={6} style={{ marginBottom: '10px' }}>
               <FloatingLabel controlId='eventEndTimeLabel' label='Event end time'>
                 <TimePicker 
-                  //style={{ width: 100 }}
+                  style={{ width: 100 }}
                   showSecond={false}
                   timeValue={timeValue}
                   use12Hours
