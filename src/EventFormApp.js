@@ -129,7 +129,7 @@ function EventFormApp() {
               </FloatingLabel>
             </Col>
             <Col sm={6} style={{ marginBottom: '10px' }}>
-              <FloatingLabel controlId='eventEndTimeLabel' label='Event end time'>
+              <FloatingLabel className="form-control" controlId='eventEndTimeLabel' label='Event end time'>
                 <TimePicker 
                   style={{ width: 100 }}
                   showSecond={false}
