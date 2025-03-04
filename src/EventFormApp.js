@@ -108,6 +108,7 @@ function EventFormApp() {
                   startDate={startDate}
                   className="form-control"
                   wrapperClassName="form-control"
+                  required
                 />
               </FloatingLabel>
             </Col>
@@ -122,6 +123,7 @@ function EventFormApp() {
                   minDate={startDate}
                   className="form-control"
                   wrapperClassName="form-control"
+                  required
                 />
               </FloatingLabel>
             </Col>
@@ -136,6 +138,7 @@ function EventFormApp() {
                   timeValue={timeValue}
                   use12Hours
                   onTimeChange={onTimeChange}
+                  required
                 />
               </FloatingLabel>
             </Col>
@@ -147,6 +150,7 @@ function EventFormApp() {
                   timeValue={timeValue}
                   use12Hours
                   onTimeChange={onTimeChange}
+                  required
                 />
               </FloatingLabel>
             </Col>
