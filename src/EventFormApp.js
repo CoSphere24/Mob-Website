@@ -175,9 +175,6 @@ function EventFormApp() {
                   <Form.Control type="file" required />
                 </FloatingLabel>
               </Form.Group>
-              <Button variant="primary">
-                Upload
-              </Button>
             </Col>
           </Row>
                     
