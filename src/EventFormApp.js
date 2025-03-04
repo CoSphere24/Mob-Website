@@ -132,7 +132,7 @@ function EventFormApp() {
               <FloatingLabel controlId='eventEndTimeLabel' label='Event end time'>
                 <TimePicker 
                   //style={{ width: 100 }}
-                  //showSecond={false}
+                  showSecond={false}
                   timeValue={timeValue}
                   //className="appointmentTimePicker"
                   onTimeChange={onTimeChange}
