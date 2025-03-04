@@ -14,6 +14,10 @@ import 'react-time-picker/dist/TimePicker.css';
 
 //const [value, setValue] = useState(new Date());
 
+import TimePicker from 'rc-time-picker';
+import ReactDOM from 'react-dom';
+import 'rc-time-picker/assets/index.css';
+
 
 function EventFormApp() {
   const [validated, setValidated] = useState(false);
@@ -126,9 +130,12 @@ function EventFormApp() {
             </Col>
             <Col sm={6} style={{ marginBottom: '10px' }}>
               <FloatingLabel controlId='eventEndTimeLabel' label='Event end time'>
-                <DateTimePicker
-                  onTimeChange={onTimeChange} timeValue={timeValue}
-                  wrapperClassName="form-control"
+                <TimePicker 
+                  //style={{ width: 100 }}
+                  //showSecond={false}
+                  timeValue={timeValue}
+                  //className="appointmentTimePicker"
+                  onTimeChange={onTimeChange}
                 />
               </FloatingLabel>
             </Col>
