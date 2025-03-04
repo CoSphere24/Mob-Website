@@ -135,7 +135,7 @@ function EventFormApp() {
                   showSecond={false}
                   timeValue={timeValue}
                   use12Hours
-                  className="form-control"
+                  wrapperClassName="form-control"
                   onTimeChange={onTimeChange}
                 />
               </FloatingLabel>
