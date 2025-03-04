@@ -135,7 +135,7 @@ function EventFormApp() {
                   showSecond={false}
                   timeValue={timeValue}
                   use12Hours
-                  //className="appointmentTimePicker"
+                  className="form-control"
                   onTimeChange={onTimeChange}
                 />
               </FloatingLabel>
