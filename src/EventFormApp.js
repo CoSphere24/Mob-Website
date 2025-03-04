@@ -8,16 +8,11 @@ import Button from 'react-bootstrap/Button';
 import { Container, FloatingLabel, Row, Col } from 'react-bootstrap';
 import DatePicker from "react-datepicker";
 import TimePicker from 'react-time-picker';
+import DateTimePicker from 'react-datetime-picker';
 import "react-datepicker/dist/react-datepicker.css";
 import 'react-time-picker/dist/TimePicker.css';
 
-import "https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js";
-import "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js";
-import "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js";
-import "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js";
-
-import "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css";
-import "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css";
+//const [value, setValue] = useState(new Date());
 
 
 function EventFormApp() {
@@ -143,22 +138,16 @@ function EventFormApp() {
           <Row>
             <Col sm={6} style={{ marginBottom: '10px' }}>
               <FloatingLabel controlId='eventStartTimeLabel' label='Event start time'>
-                <div className='input-group date' id='datetimepicker1'>
-                  <input type='text' className="form-control" />
-                  <span className="input-group-addon">
-                    <span className="glyphicon glyphicon-calendar"></span>
-                  </span>
-                </div>
+                <DateTimePicker
+                  onTimeChange={onTimeChange} timeValue={timeValue}
+                />
               </FloatingLabel>
             </Col>
             <Col sm={6} style={{ marginBottom: '10px' }}>
               <FloatingLabel controlId='eventEndTimeLabel' label='Event end time'>
-                <div className='input-group date' id='datetimepicker1'>
-                  <input type='text' className="form-control" />
-                  <span className="input-group-addon">
-                    <span className="glyphicon glyphicon-calendar"></span>
-                  </span>
-                </div>
+                <DateTimePicker
+                  onTimeChange={onTimeChange} timeValue={timeValue}
+                />
               </FloatingLabel>
             </Col>
           </Row>
