@@ -134,6 +134,7 @@ function EventFormApp() {
                   //style={{ width: 100 }}
                   showSecond={false}
                   timeValue={timeValue}
+                  use12Hours
                   //className="appointmentTimePicker"
                   onTimeChange={onTimeChange}
                 />
