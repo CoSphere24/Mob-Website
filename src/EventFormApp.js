@@ -129,13 +129,12 @@ function EventFormApp() {
               </FloatingLabel>
             </Col>
             <Col sm={6} style={{ marginBottom: '10px' }}>
-              <FloatingLabel className="form-control" controlId='eventEndTimeLabel' label='Event end time'>
+              <FloatingLabel style={{ display: block }} controlId='eventEndTimeLabel' label='Event end time'>
                 <TimePicker 
                   style={{ width: 100 }}
                   showSecond={false}
                   timeValue={timeValue}
                   use12Hours
-                  wrapperClassName="form-control"
                   onTimeChange={onTimeChange}
                 />
               </FloatingLabel>
