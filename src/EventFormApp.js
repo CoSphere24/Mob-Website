@@ -54,7 +54,7 @@ function EventFormApp() {
             <Col sm={6} style={{ marginBottom: '10px' }}>
               <Form.Group>
                 <FloatingLabel controlId='firstnamLabel' label='First name'>
-                  <Form.Control type='text' placeholder='First name' required />
+                  <Form.Control type='text' required />
                 </FloatingLabel>
                 <Form.Control.Feedback type='invalid'>
                   Do not leave empty
@@ -63,7 +63,7 @@ function EventFormApp() {
             </Col>
             <Col sm={6} style={{ marginBottom: '10px' }}>
               <FloatingLabel controlId='lastnameLabel' label='Last name'>
-                <Form.Control type='text' placeholder='Last name' required />
+                <Form.Control type='text' required />
               </FloatingLabel>
             </Col>
           </Row>
@@ -74,7 +74,6 @@ function EventFormApp() {
                 <FloatingLabel controlId='emailLabel' label='Enter email'>
                   <Form.Control
                     type='email'
-                    placeholder='Enter email'
                     required
                     pattern='^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'
                   />
@@ -83,13 +82,21 @@ function EventFormApp() {
             </Col>
           </Row>
 
-            <Row>
-              <Col sm={6} style={{ marginBottom: '10px' }}>
-                <FloatingLabel controlId='eventnameLabel' label='Event name'>
-                  <Form.Control type='text' placeholder='Event name' required />
-                </FloatingLabel>
-              </Col>
-            </Row>
+          <Row>
+            <Col sm={6} style={{ marginBottom: '10px' }}>
+              <FloatingLabel controlId='eventnameLabel' label='Event title'>
+                <Form.Control type='text' required />
+              </FloatingLabel>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col sm={6} style={{ marginBottom: '10px' }}>
+              <FloatingLabel controlId='eventOrgLabel' label='Event organizer'>
+                <Form.Control type='text' required />
+              </FloatingLabel>
+            </Col>
+          </Row>
 
           <Row>
             <Col sm={6} style={{ marginBottom: '10px' }}>
@@ -147,8 +154,37 @@ function EventFormApp() {
 
           <Row>
             <Col sm={6} style={{ marginBottom: '10px' }}>
+              <FloatingLabel controlId='eventLocLabel' label='Event location'>
+                <Form.Control type='text' required />
+              </FloatingLabel>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col sm={6} style={{ marginBottom: '10px' }}>
               <FloatingLabel controlId='eventDescLabel' label='Event description'>
                 <Form.Control as="textarea" rows={3} required />
+              </FloatingLabel>
+            </Col>
+          </Row>
+                    
+          <Row>
+            <Col sm={6} style={{ marginBottom: '10px' }}>
+              <Form.Group controlId="formFile" className="mb-3">
+                <FloatingLabel controlId='eventImageLabel' label='Event image'>
+                  <Form.Control type="file" required />
+                </FloatingLabel>
+              </Form.Group>
+              <Button variant="primary">
+                Upload
+              </Button>
+            </Col>
+          </Row>
+                    
+          <Row>
+            <Col sm={6} style={{ marginBottom: '10px' }}>
+              <FloatingLabel controlId='eventLocLabel' label='Link to landing page'>
+                <Form.Control type='text' />
               </FloatingLabel>
             </Col>
           </Row>
@@ -177,7 +213,7 @@ function EventFormApp() {
           </Row>
 
           <Button variant='primary' type='submit'>
-            Register
+            Submit
           </Button>
         </Container>
       </Form>
