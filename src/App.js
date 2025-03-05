@@ -95,7 +95,7 @@
                   </NavLink>
                 </li>
                 <li className="nav-item mr-3">
-                  <NavLink className="nav-link page-scroll" to="/#pricing">
+                  <NavLink className="nav-link page-scroll" to="/home#pricing">
                     Pricing
                   </NavLink>
                 </li>
