@@ -13,7 +13,6 @@
     const App = () => {
 
         const location = useLocation();
-        const navigate = useNavigate();
         
         useEffect(() => {
             new WOW.WOW().init();
