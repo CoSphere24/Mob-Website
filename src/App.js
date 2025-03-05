@@ -4,7 +4,7 @@
     import './bootstrap.css';
     import './bootstrap.min.css';
     import './App.css';
-    import { NavLink, Routes, Route } from 'react-router-dom';
+    import { NavLink, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
     import Home from './Home';
     import Blogs from './Blogs';
     import SubmitEvent from './SubmitEvent';
