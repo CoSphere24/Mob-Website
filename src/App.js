@@ -23,7 +23,7 @@
               // Handle sticky navigation background color change
               const stickyNav = document.querySelector('.sticky-navigation');
               if (scroll >= 150) {
-                stickyNav.style.backgroundColor = '#FF5613';
+                stickyNav.style.backgroundColor = '#ff7842';
               } else {
                 stickyNav.style.backgroundColor = 'transparent';
               }
