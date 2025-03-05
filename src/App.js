@@ -11,16 +11,17 @@
     import WOW from 'wowjs';
 
     const App = () => {
+
+        const location = useLocation();
+        const navigate = useNavigate();
+        
         useEffect(() => {
-            // Initialize WOW.js animations
             new WOW.WOW().init();
         
-            // Handle scroll events for sticky navigation and other behaviors
             const handleScroll = () => {
               const secondFeature = document.getElementById('features')?.offsetTop || 0;
               const scroll = window.scrollY;
         
-              // Handle sticky navigation background color change
               const stickyNav = document.querySelector('.sticky-navigation');
               if (scroll >= 150) {
                 stickyNav.style.backgroundColor = '#ff7842';
@@ -28,7 +29,6 @@
                 stickyNav.style.backgroundColor = 'transparent';
               }
         
-              // Handle background position change for mobile screen when reaching second feature
               if ( document.querySelector('.mobileScreen') ) {
                   const mobileScreen = document.querySelector('.mobileScreen');
                   if (scroll >= secondFeature - 200) {
@@ -37,23 +37,25 @@
               };
             };
         
-            // Add scroll event listener
             window.addEventListener('scroll', handleScroll);
         
-            // Cleanup on unmount
             return () => {
               window.removeEventListener('scroll', handleScroll);
             };
           }, []);
         
-          const handlePageScroll = (event, target) => {
-            event.preventDefault();
-            const targetElement = document.querySelector(target);
-            window.scrollTo({
-              top: targetElement.offsetTop - 50, // Adjust for offset
-              behavior: 'smooth',
-            });
-          };
+          useEffect(() => {
+            const hash = location.hash;
+            if (hash) {
+              const targetElement = document.querySelector(hash);
+              if (targetElement) {
+                window.scrollTo({
+                  top: targetElement.offsetTop - 50,
+                  behavior: 'smooth',
+                });
+              }
+            }
+          }, [location]);
         
           return (
             <div className='app'>
@@ -67,7 +69,7 @@
       //</div>
     };
 
-    const Navigation = ({ handlePageScroll }) => (
+    const Navigation = () => (
         <nav className="navbar navbar-expand-md navbar-dark fixed-top sticky-navigation">
             <button
               className="navbar-toggler navbar-toggler-right"
@@ -84,40 +86,24 @@
             <div className="collapse navbar-collapse" id="navbarCollapse">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item mr-3">
-                  <a
-                    className="nav-link page-scroll"
-                    href="#product"
-                    onClick={(e) => handlePageScroll(e, '#product')}
-                  >
+                  <NavLink className="nav-link page-scroll" to="/#product">
                     Product
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item mr-3">
-                  <a
-                    className="nav-link page-scroll"
-                    href="#features"
-                    onClick={(e) => handlePageScroll(e, '#features')}
-                  >
+                  <NavLink className="nav-link page-scroll" to="/#features">
                     Features
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item mr-3">
-                  <a
-                    className="nav-link page-scroll"
-                    href="#pricing"
-                    onClick={(e) => handlePageScroll(e, '#pricing')}
-                  >
+                  <NavLink className="nav-link page-scroll" to="/#pricing">
                     Pricing
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item mr-3">
-                  <a
-                    className="nav-link page-scroll"
-                    href="#partners"
-                    onClick={(e) => handlePageScroll(e, '#partners')}
-                  >
+                  <NavLink className="nav-link page-scroll" to="/#partners">
                     Partners
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item mr-3">
                   <NavLink exact activeClassName="current" to="/blogs">
@@ -125,13 +111,9 @@
                   </NavLink>
                 </li>
                 <li className="nav-item mr-3">
-                  <a
-                    className="nav-link page-scroll"
-                    href="#contact"
-                    onClick={(e) => handlePageScroll(e, '#contact')}
-                  >
+                  <NavLink className="nav-link page-scroll" to="/#contact">
                     Contact
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </div>
