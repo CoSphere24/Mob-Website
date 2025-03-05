@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Home = () => (
+const Home = () => {
       return (
             <div className='home'>
               <section class="bg-texture hero" id="main">
@@ -325,6 +325,6 @@ const Home = () => (
               </section>
             </div>
       );
-    );
+};
 
 export default Home;
