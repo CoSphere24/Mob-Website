@@ -29,10 +29,12 @@
               }
         
               // Handle background position change for mobile screen when reaching second feature
-              const mobileScreen = document.querySelector('.mobileScreen');
-              if (scroll >= secondFeature - 200) {
-                mobileScreen.style.backgroundPosition = 'center top';
-              }
+              if ( document.querySelector('.mobileScreen') ) {
+                  const mobileScreen = document.querySelector('.mobileScreen');
+                  if (scroll >= secondFeature - 200) {
+                      mobileScreen.style.backgroundPosition = 'center top';
+                  }
+              };
             };
         
             // Add scroll event listener
