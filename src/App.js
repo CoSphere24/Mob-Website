@@ -59,7 +59,7 @@
         
           return (
             <div className='app'>
-              <Navigation handlePageScroll={handlePageScroll} />
+              <Navigation />
               <Main />
             </div>
           );
