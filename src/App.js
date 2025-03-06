@@ -12,115 +12,80 @@
 
     const App = () => {
         const location = useLocation();
-        const navigate = useNavigate(); // Initialize navigate here
+        const navigate = useNavigate();
     
-        // Smooth scrolling effect for anchors (in case the URL changes directly)
+        // Handle smooth scroll when hash in the URL changes
         useEffect(() => {
-            const hash = location.hash; // Check the URL hash
+            const hash = location.hash;
             if (hash) {
                 const targetElement = document.querySelector(hash);
                 if (targetElement) {
                     window.scrollTo({
-                        top: targetElement.offsetTop - 50,
-                        behavior: 'smooth', // Ensure smooth scroll
+                        top: targetElement.offsetTop - 50, // Adjust to offset navbar height
+                        behavior: 'smooth', // Smooth scroll effect
                     });
                 }
             }
-        }, [location]); // When location changes (e.g., URL hash), trigger smooth scroll
+        }, [location]); // Listen to hash changes in the URL
     
         return (
             <div className='app'>
-                <Navigation navigate={navigate} /> {/* Pass navigate prop */}
+                <Navigation />
                 <Main />
             </div>
         );
     };
     
-    const Navigation = ({ navigate }) => {
-        useEffect(() => {
-            const navLinks = document.querySelectorAll('.page-scroll');
-    
-            navLinks.forEach((link) => {
-                link.addEventListener('click', function (e) {
-                    e.preventDefault(); // Prevent default navigation behavior
-    
-                    const targetId = this.getAttribute('href').slice(1); // Get the target section id
-                    const targetElement = document.getElementById(targetId);
-    
-                    if (targetElement) {
-                        // Trigger smooth scrolling
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 50, // Offset to account for navbar height
-                            behavior: 'smooth',
-                        });
-    
-                        // Manually update the URL to reflect the hash
-                        navigate(`#${targetId}`);
-                    }
-                });
-            });
-    
-            // Cleanup event listeners when the component unmounts
-            return () => {
-                navLinks.forEach((link) => {
-                    link.removeEventListener('click', () => {});
-                });
-            };
-        }, [navigate]);
-    
-        return (
-            <nav className="navbar navbar-expand-md navbar-dark fixed-top sticky-navigation">
-                <button
-                    className="navbar-toggler navbar-toggler-right"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarCollapse"
-                    aria-controls="navbarCollapse"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span className="ion-grid icon-sm"></span>
-                </button>
-                <a className="navbar-brand hero-heading" href="https://findyourmob.netlify.app/">
-                    Mob
-                </a>
-                <div className="collapse navbar-collapse" id="navbarCollapse">
-                    <ul className="navbar-nav ml-auto">
-                        <li className="nav-item mr-3">
-                            <NavLink className="nav-link page-scroll" to="#product">
-                                Product
-                            </NavLink>
-                        </li>
-                        <li className="nav-item mr-3">
-                            <NavLink className="nav-link page-scroll" to="#features">
-                                Features
-                            </NavLink>
-                        </li>
-                        <li className="nav-item mr-3">
-                            <NavLink className="nav-link page-scroll" to="#pricing">
-                                Pricing
-                            </NavLink>
-                        </li>
-                        <li className="nav-item mr-3">
-                            <NavLink className="nav-link page-scroll" to="#partners">
-                                Partners
-                            </NavLink>
-                        </li>
-                        <li className="nav-item mr-3">
-                            <NavLink exact activeClassName="current" to="/blogs">
-                                <a className="nav-link page-scroll">Blogs</a>
-                            </NavLink>
-                        </li>
-                        <li className="nav-item mr-3">
-                            <NavLink className="nav-link page-scroll" to="#contact">
-                                Contact
-                            </NavLink>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        );
-    };
+    const Navigation = () => (
+        <nav className="navbar navbar-expand-md navbar-dark fixed-top sticky-navigation">
+            <button
+                className="navbar-toggler navbar-toggler-right"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarCollapse"
+                aria-controls="navbarCollapse"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span className="ion-grid icon-sm"></span>
+            </button>
+            <a className="navbar-brand hero-heading" href="https://findyourmob.netlify.app/">Mob</a>
+            <div className="collapse navbar-collapse" id="navbarCollapse">
+                <ul className="navbar-nav ml-auto">
+                    <li className="nav-item mr-3">
+                        <NavLink className="nav-link page-scroll" to="#product">
+                            Product
+                        </NavLink>
+                    </li>
+                    <li className="nav-item mr-3">
+                        <NavLink className="nav-link page-scroll" to="#features">
+                            Features
+                        </NavLink>
+                    </li>
+                    <li className="nav-item mr-3">
+                        <NavLink className="nav-link page-scroll" to="#pricing">
+                            Pricing
+                        </NavLink>
+                    </li>
+                    <li className="nav-item mr-3">
+                        <NavLink className="nav-link page-scroll" to="#partners">
+                            Partners
+                        </NavLink>
+                    </li>
+                    <li className="nav-item mr-3">
+                        <NavLink exact activeClassName="current" to="/blogs">
+                            <a className="nav-link page-scroll">Blogs</a>
+                        </NavLink>
+                    </li>
+                    <li className="nav-item mr-3">
+                        <NavLink className="nav-link page-scroll" to="#contact">
+                            Contact
+                        </NavLink>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    );
 
     const Contact = () => (
       <div className='contact'>
