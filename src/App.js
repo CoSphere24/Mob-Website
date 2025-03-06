@@ -13,11 +13,8 @@
     const App = () => {
 
         const location = useLocation();
-        
+
         useEffect(() => {
-            new WOW.WOW().init();
-            
-            useEffect(() => {
                 const hash = location.hash;
                 if (hash) {
                     const targetElement = document.querySelector(hash);
