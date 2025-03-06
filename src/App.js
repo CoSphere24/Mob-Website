@@ -13,6 +13,7 @@
     const App = () => {
 
         const location = useLocation();
+        const navigate = useNavigate();
 
         useEffect(() => {
                 const hash = location.hash;
