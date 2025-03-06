@@ -13,6 +13,7 @@
     const App = () => {
 
         const location = useLocation();
+        const navigate = useNavigate();
 
         useEffect(() => {
                 const hash = location.hash;
@@ -54,6 +55,7 @@
                                 top: targetElement.offsetTop - 50,
                                 behavior: 'smooth',
                             });
+                            navigate(`#${targetId}`);
                         }
                     });
                 });
