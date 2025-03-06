@@ -13,7 +13,6 @@
     const App = () => {
 
         const location = useLocation();
-        const navigate = useNavigate();
 
         useEffect(() => {
                 const hash = location.hash;
@@ -41,6 +40,8 @@
     };
 
     const Navigation = () => {
+        
+        const navigate = useNavigate();
         
         useEffect(() => {
                 const navLinks = document.querySelectorAll('.page-scroll');
