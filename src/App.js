@@ -16,45 +16,19 @@
         
         useEffect(() => {
             new WOW.WOW().init();
-        
-            const handleScroll = () => {
-              const secondFeature = document.getElementById('features')?.offsetTop || 0;
-              const scroll = window.scrollY;
-        
-              const stickyNav = document.querySelector('.sticky-navigation');
-              if (scroll >= 150) {
-                stickyNav.style.backgroundColor = '#ff7842';
-              } else {
-                stickyNav.style.backgroundColor = 'transparent';
-              }
-        
-              if ( document.querySelector('.mobileScreen') ) {
-                  const mobileScreen = document.querySelector('.mobileScreen');
-                  if (scroll >= secondFeature - 200) {
-                      mobileScreen.style.backgroundPosition = 'center top';
-                  }
-              };
-            };
-        
-            window.addEventListener('scroll', handleScroll);
-        
-            return () => {
-              window.removeEventListener('scroll', handleScroll);
-            };
-          }, []);
-        
-          useEffect(() => {
-            const hash = location.hash;
-            if (hash) {
-              const targetElement = document.querySelector(hash);
-              if (targetElement) {
-                window.scrollTo({
-                  top: targetElement.offsetTop - 50,
-                  behavior: 'smooth',
-                });
-              }
-            }
-          }, [location]);
+            
+            useEffect(() => {
+                const hash = location.hash;
+                if (hash) {
+                    const targetElement = document.querySelector(hash);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 50,
+                            behavior: 'smooth',
+                        });
+                    }
+                }
+            }, [location]);
         
           return (
             <div className='app'>
@@ -68,56 +42,84 @@
       //</div>
     };
 
-    const Navigation = () => (
-        <nav className="navbar navbar-expand-md navbar-dark fixed-top sticky-navigation">
-            <button
-              className="navbar-toggler navbar-toggler-right"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarCollapse"
-              aria-controls="navbarCollapse"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="ion-grid icon-sm"></span>
-            </button>
-            <a className="navbar-brand hero-heading" href="https://findyourmob.netlify.app/">Mob</a>
-            <div className="collapse navbar-collapse" id="navbarCollapse">
-              <ul className="navbar-nav ml-auto">
-                <li className="nav-item mr-3">
-                  <NavLink className="nav-link page-scroll" to="/#product">
-                    Product
-                  </NavLink>
-                </li>
-                <li className="nav-item mr-3">
-                  <NavLink className="nav-link page-scroll" to="/#features">
-                    Features
-                  </NavLink>
-                </li>
-                <li className="nav-item mr-3">
-                  <NavLink className="nav-link page-scroll" to="/#pricing">
-                    Pricing
-                  </NavLink>
-                </li>
-                <li className="nav-item mr-3">
-                  <NavLink className="nav-link page-scroll" to="/#partners">
-                    Partners
-                  </NavLink>
-                </li>
-                <li className="nav-item mr-3">
-                  <NavLink exact activeClassName="current" to="/blogs">
-                    <a className="nav-link page-scroll">Blogs</a>
-                  </NavLink>
-                </li>
-                <li className="nav-item mr-3">
-                  <NavLink className="nav-link page-scroll" to="/#contact">
-                    Contact
-                  </NavLink>
-                </li>
-              </ul>
-            </div>
-          </nav>
-    );
+    const Navigation = () => {
+        
+        useEffect(() => {
+                const navLinks = document.querySelectorAll('.page-scroll');
+                
+                navLinks.forEach((link) => {
+                    link.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const targetId = this.getAttribute('href').slice(1);
+                        const targetElement = document.getElementById(targetId);
+                        if (targetElement) {
+                            window.scrollTo({
+                                top: targetElement.offsetTop - 50,
+                                behavior: 'smooth',
+                            });
+                        }
+                    });
+                });
+        
+                // Cleanup event listeners on component unmount
+                return () => {
+                    navLinks.forEach((link) => {
+                        link.removeEventListener('click', () => {});
+                    });
+                };
+            }, []);
+
+        return (
+            <nav className="navbar navbar-expand-md navbar-dark fixed-top sticky-navigation">
+                <button
+                  className="navbar-toggler navbar-toggler-right"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarCollapse"
+                  aria-controls="navbarCollapse"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span className="ion-grid icon-sm"></span>
+                </button>
+                <a className="navbar-brand hero-heading" href="https://findyourmob.netlify.app/">Mob</a>
+                <div className="collapse navbar-collapse" id="navbarCollapse">
+                  <ul className="navbar-nav ml-auto">
+                    <li className="nav-item mr-3">
+                      <NavLink className="nav-link page-scroll" to="/#product">
+                        Product
+                      </NavLink>
+                    </li>
+                    <li className="nav-item mr-3">
+                      <NavLink className="nav-link page-scroll" to="/#features">
+                        Features
+                      </NavLink>
+                    </li>
+                    <li className="nav-item mr-3">
+                      <NavLink className="nav-link page-scroll" to="/#pricing">
+                        Pricing
+                      </NavLink>
+                    </li>
+                    <li className="nav-item mr-3">
+                      <NavLink className="nav-link page-scroll" to="/#partners">
+                        Partners
+                      </NavLink>
+                    </li>
+                    <li className="nav-item mr-3">
+                      <NavLink exact activeClassName="current" to="/blogs">
+                        <a className="nav-link page-scroll">Blogs</a>
+                      </NavLink>
+                    </li>
+                    <li className="nav-item mr-3">
+                      <NavLink className="nav-link page-scroll" to="/#contact">
+                        Contact
+                      </NavLink>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+        )
+    };
 
     const Contact = () => (
       <div className='contact'>
