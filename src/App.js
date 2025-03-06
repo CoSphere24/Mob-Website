@@ -12,8 +12,7 @@
 
     const App = () => {
         const location = useLocation();
-        const navigate = useNavigate();
-    
+
         // Handle smooth scroll when hash in the URL changes
         useEffect(() => {
             const hash = location.hash;
@@ -53,24 +52,24 @@
             <div className="collapse navbar-collapse" id="navbarCollapse">
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item mr-3">
-                        <NavLink className="nav-link page-scroll" to="#product">
+                        <a className="nav-link page-scroll" href="#product">
                             Product
-                        </NavLink>
+                        </a>
                     </li>
                     <li className="nav-item mr-3">
-                        <NavLink className="nav-link page-scroll" to="#features">
+                        <a className="nav-link page-scroll" href="#features">
                             Features
-                        </NavLink>
+                        </a>
                     </li>
                     <li className="nav-item mr-3">
-                        <NavLink className="nav-link page-scroll" to="#pricing">
+                        <a className="nav-link page-scroll" href="#pricing">
                             Pricing
-                        </NavLink>
+                        </a>
                     </li>
                     <li className="nav-item mr-3">
-                        <NavLink className="nav-link page-scroll" to="#partners">
+                        <a className="nav-link page-scroll" href="#partners">
                             Partners
-                        </NavLink>
+                        </a>
                     </li>
                     <li className="nav-item mr-3">
                         <NavLink exact activeClassName="current" to="/blogs">
@@ -78,14 +77,15 @@
                         </NavLink>
                     </li>
                     <li className="nav-item mr-3">
-                        <NavLink className="nav-link page-scroll" to="#contact">
+                        <a className="nav-link page-scroll" href="#contact">
                             Contact
-                        </NavLink>
+                        </a>
                     </li>
                 </ul>
             </div>
         </nav>
     );
+
 
     const Contact = () => (
       <div className='contact'>
