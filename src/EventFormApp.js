@@ -158,13 +158,18 @@ function EventFormApp() {
 
           <Row>
             <Col sm={6} style={{ marginBottom: '10px' }}>
-              <input type="checkbox" id="recurring" /><label for="check">This is a recurring event.</label>
-                    <Form.Select aria-label="Default select example">
-                      <option>Open this select menu</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </Form.Select>
+              <Form.Group className='mb-3' controlId='recurring'>
+                <Form.Check
+                  type='checkbox'
+                  label='This is a recurring event.'
+                />
+                <Form.Select aria-label="Default select example">
+                  <option>Open this select menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </Form.Select>
+              </Form.Group>
             </Col>
           </Row>
 
