@@ -1565,7 +1565,7 @@ input[type=checkbox]:checked + label {
   transition: left 0.8s, bottom 0.5s, font-size 0.6s;
 }
 
-.form-check:focus ~ select {
+.form-check:focus-within ~ select {
   visibility: visible;
   opacity: 1;
   transition: opacity 0.9s;
