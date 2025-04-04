@@ -162,8 +162,9 @@ function EventFormApp() {
                 <Form.Check
                   type='checkbox'
                   label='This is a recurring event.'
+                  controlID='recurringCheck'
                 />
-                <Form.Select aria-label="Select choice">
+                <Form.Select aria-label="Select choice" controlID='recurringDropdown'>
                   <option>Repeats...</option>
                   <option value="1">Daily</option>
                   <option value="2">Weekly</option>
