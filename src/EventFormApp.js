@@ -210,6 +210,7 @@ function EventFormApp() {
                   <option value="3">Monthly</option>
                 </Form.Select>
               </FloatingLabel>
+            </Col>
           </Row>
 
           <Row>
