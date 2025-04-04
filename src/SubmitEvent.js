@@ -8,7 +8,7 @@ import './bootstrap.css';
 
 const SubmitEvent = () => (
       <div className='SubmitEvent'>
-            <section style={{backgroundColor:#ff7842}}></section>
+            <section style={{backgroundColor: "#ff7842"}}></section>
             <section class="bg-light">
                   <br/><br/>
                   <div class="container">
