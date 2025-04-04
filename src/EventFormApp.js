@@ -262,7 +262,7 @@ function EventFormApp() {
                   label={
                       <span>
                       I agree to the 
-                      <a href={#} target="_blank" rel="noopener noreferrer">Terms & Conditions</a>
+                      <a href={'http://google.com/'} target="_blank" rel="noopener noreferrer">Terms & Conditions</a>
                       </span>
                     }
                   required
