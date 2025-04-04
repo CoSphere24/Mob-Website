@@ -173,7 +173,7 @@ function EventFormApp() {
                   <option value="1">Daily</option>
                   <option value="2">Weekly</option>
                   <option value="3">Bi-Weekly</option>
-                  <option value="3">Monthly</option>
+                  <option value="4">Monthly</option>
                 </Form.Select>
               </Form.Group>
             </Col>
@@ -188,26 +188,22 @@ function EventFormApp() {
           </Row>
 
           <Row>
-            <Col sm={6} style={{ marginBottom: '10px' }}>
-              <Form.Select aria-label="Select choice" controlID='category'>
-                  <option>Repeats...</option>
-                  <option value="1">Daily</option>
-                  <option value="2">Weekly</option>
-                  <option value="3">Bi-Weekly</option>
-                  <option value="3">Monthly</option>
-                </Form.Select>
-            </Col>
-          </Row>
-
-          <Row>
-            <Col sm={6} style={{ marginBottom: '10px' }}>
-              <FloatingLabel controlId='eventLocLabel' label='Event type'>
+            <Col sm={6} style={{ marginBottom: '10px', width: '300px' }}>
+              <FloatingLabel controlId='eventLocLabel' label=''>
                 <Form.Select aria-label="Select choice" controlID='eventCategory'>
-                  <option>Repeats...</option>
-                  <option value="1">Daily</option>
-                  <option value="2">Weekly</option>
-                  <option value="3">Bi-Weekly</option>
-                  <option value="3">Monthly</option>
+                  <option>Event Category...</option>
+                  <option value="1">Festivals</option>
+                  <option value="2">Music</option>
+                  <option value="3">Socials</option>
+                  <option value="4">Sports</option>
+                  <option value="5">Theatre</option>
+                  <option value="6">Art</option>
+                  <option value="7">Food</option>
+                  <option value="8">Movies</option>
+                  <option value="9">Professional</option>
+                  <option value="10">Markets / Fairs</option>
+                  <option value="11">Museums</option>
+                  <option value="12">Outdoor</option>
                 </Form.Select>
               </FloatingLabel>
             </Col>
@@ -222,7 +218,7 @@ function EventFormApp() {
           </Row>
 
           <Row>
-            <Col sm={6} style={{ marginBottom: '10px' }}>
+            <Col sm={6} style={{ marginBottom: '10px', width: '100px' }}>
               <FloatingLabel controlId='eventCapacity' label='Capacity'>
                 <Form.Control type='number' required />
               </FloatingLabel>
