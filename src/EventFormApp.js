@@ -161,7 +161,7 @@ function EventFormApp() {
           </Row>
 
           <Row>
-            <Col sm={6} style={{ marginBottom: '10px' }}>
+            <Col sm={6}>
               <Form.Group className='mb-3' style={{ marginTop: '20px' }} controlId='recurring'>
                 <Form.Check
                   type='checkbox'
@@ -185,6 +185,31 @@ function EventFormApp() {
                 <Form.Control type='text' required />
               </FloatingLabel>
             </Col>
+          </Row>
+
+          <Row>
+            <Col sm={6} style={{ marginBottom: '10px' }}>
+              <Form.Select aria-label="Select choice" controlID='category'>
+                  <option>Repeats...</option>
+                  <option value="1">Daily</option>
+                  <option value="2">Weekly</option>
+                  <option value="3">Bi-Weekly</option>
+                  <option value="3">Monthly</option>
+                </Form.Select>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col sm={6} style={{ marginBottom: '10px' }}>
+              <FloatingLabel controlId='eventLocLabel' label='Event type'>
+                <Form.Select aria-label="Select choice" controlID='eventCategory'>
+                  <option>Repeats...</option>
+                  <option value="1">Daily</option>
+                  <option value="2">Weekly</option>
+                  <option value="3">Bi-Weekly</option>
+                  <option value="3">Monthly</option>
+                </Form.Select>
+              </FloatingLabel>
           </Row>
 
           <Row>
