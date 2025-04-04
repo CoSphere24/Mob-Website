@@ -90,9 +90,9 @@ function EventFormApp() {
             </Col>
           </Row>
 
-          <h4 style={{ marginBottom: '15px' }}>
-            Got Multiple Events? Fill out the template.
-          </h4>
+          <h5 style={{ marginBottom: '15px' }}>
+            Got Multiple Events? Fill out the template. <Form.Control type="file" required />
+          </h5>
 
           <Row>
             <Col sm={6} style={{ marginBottom: '10px' }}>
