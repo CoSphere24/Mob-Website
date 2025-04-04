@@ -190,7 +190,7 @@ function EventFormApp() {
           <Row>
             <Col sm={6} style={{ marginBottom: '10px', width: '300px' }}>
               <FloatingLabel controlId='eventLocLabel' label=''>
-                <Form.Select aria-label="Select choice" controlID='eventCategory'>
+                <Form.Select aria-label="Select choice" controlID='eventCategory' required>
                   <option>Event Category...</option>
                   <option value="1">Festivals</option>
                   <option value="2">Music</option>
