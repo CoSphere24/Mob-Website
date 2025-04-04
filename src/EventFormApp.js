@@ -259,7 +259,12 @@ function EventFormApp() {
               <Form.Group className='mb-3' controlId='formBasicFollow'>
                 <Form.Check
                   type='checkbox'
-                  label='I agree to the <a href="#">Terms & Conditions</a>'
+                  label={
+                    <div>
+                      <span>I agree to the </span>
+                      <Link to={'/terms'}>Terms & Conditions</Link>
+                     </div>
+                    }
                   required
                 />
               </Form.Group>
