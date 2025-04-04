@@ -84,15 +84,19 @@ function EventFormApp() {
 
           <Row>
             <Col sm={6} style={{ marginBottom: '10px' }}>
-              <FloatingLabel controlId='eventnameLabel' label='Event title'>
+              <FloatingLabel controlId='eventOrgLabel' label='Event organizer'>
                 <Form.Control type='text' required />
               </FloatingLabel>
             </Col>
           </Row>
 
+          <h4 style={{ marginBottom: '15px' }}>
+            Got Multiple Events? Fill out the template.
+          </h4>
+
           <Row>
             <Col sm={6} style={{ marginBottom: '10px' }}>
-              <FloatingLabel controlId='eventOrgLabel' label='Event organizer'>
+              <FloatingLabel controlId='eventnameLabel' label='Event title'>
                 <Form.Control type='text' required />
               </FloatingLabel>
             </Col>
@@ -158,7 +162,7 @@ function EventFormApp() {
 
           <Row>
             <Col sm={6} style={{ marginBottom: '10px' }}>
-              <Form.Group className='mb-3' controlId='recurring'>
+              <Form.Group className='mb-3' style={{ marginTop: '20px' }} controlId='recurring'>
                 <Form.Check
                   type='checkbox'
                   label='This is a recurring event.'
