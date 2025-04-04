@@ -91,7 +91,7 @@ function EventFormApp() {
           </Row>
 
           <h5 style={{ marginBottom: '15px' }}>
-            Got Multiple Events? Fill out the template. <Form.Control type="file" required />
+            Got Multiple Events? Fill out the template. <Form.Control type="file" style={{ display: 'inline', width: 'auto' }} required />
           </h5>
 
           <Row>
