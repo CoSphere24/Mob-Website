@@ -260,10 +260,10 @@ function EventFormApp() {
                 <Form.Check
                   type='checkbox'
                   label={
-                    <div>
-                      <span>I agree to the </span>
-                      <Link to={'/terms'}>Terms & Conditions</Link>
-                     </div>
+                      <span>
+                      I agree to the 
+                      <a href={#} target="_blank" rel="noopener noreferrer">Terms & Conditions</a>
+                      </span>
                     }
                   required
                 />
