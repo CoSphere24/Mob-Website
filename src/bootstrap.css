@@ -1559,7 +1559,7 @@ input[type=checkbox] + label {
 
 input[type=checkbox]:checked + label {
   position: relative;
-  bottom: 20px;
+  bottom: 25px;
   left: -20px;
   font-size: 13px;
   transition: left 0.8s, bottom 0.5s, font-size 0.6s;
@@ -1568,13 +1568,17 @@ input[type=checkbox]:checked + label {
 .form-check:has(input:checked) ~ select {
   visibility: visible;
   opacity: 1;
+  position: relative;
+  margin-left: 20px;
+  top: -35px;
   transition: opacity 0.9s;
 }
 
 .form-check ~ select {
   visibility: hidden;
   opacity: 0;
-  margin-left: -30px;
+  position: relative;
+  margin-left: 20px;
   transition: opacity 0.9s;
 }
 
