@@ -91,7 +91,7 @@ function EventFormApp() {
           </Row>
 
           <h5 style={{ marginBottom: '15px' }}>
-            Got Multiple Events? Fill out the template. <Form.Control type="file" style={{ display: 'inline', width: 'auto' }} required />
+            Got Multiple Events? Fill out the <a href="#">template</a>. <Form.Control type="file" style={{ display: 'inline', width: 'auto' }} required />
           </h5>
 
           <Row>
@@ -259,7 +259,7 @@ function EventFormApp() {
               <Form.Group className='mb-3' controlId='formBasicFollow'>
                 <Form.Check
                   type='checkbox'
-                  label='I agree to the Terms & Conditions'
+                  label='I agree to the <a href="#">Terms & Conditions</a>'
                   required
                 />
               </Form.Group>
