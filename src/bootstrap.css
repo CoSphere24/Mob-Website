@@ -1549,6 +1549,35 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .form-group {
   margin-bottom: 1rem; }
 
+#recurring input[type=checkbox] + label {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  font-size: normal;
+  transition: left 0.5s, bottom 0.8s, font-size 0.6s;
+}
+
+#recurring input[type=checkbox]:checked + label {
+  position: relativ;
+  bottom: 20px;
+  left: -20px;
+  font-size: 13px;
+  transition: left 0.8s, bottom 0.5s, font-size 0.6s;
+}
+
+#recurring input[type=checkbox]:checked ~ input[type=text] {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.9s;
+}
+
+#recurring input[type=checkbox] ~ input[type=text] {
+  visibility: hidden;
+  opacity: 0;
+  margin-left: -30px;
+  transition: opacity 0.9s;
+}
+
 .form-text {
   display: block;
   margin-top: 0.25rem; }
