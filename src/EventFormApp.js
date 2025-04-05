@@ -218,9 +218,9 @@ function EventFormApp() {
           </Row>
 
           <Row>
-            <Col sm={6} style={{ marginBottom: '10px', width: '100px' }}>
+            <Col sm={6} style={{ marginBottom: '10px' }}>
               <FloatingLabel controlId='eventCapacity' label='Capacity'>
-                <Form.Control type='number' required />
+                <Form.Control type='number' style={{ width: '100px' }} required />
               </FloatingLabel>
             </Col>
           </Row>
