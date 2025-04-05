@@ -49,7 +49,7 @@ function EventFormApp() {
           Submit New Event
         </h2>
         <br/><br/>
-        <Container fluid>
+        <Container fluid style={{ width: '80%' }}>
           <Row style={{ width: '800px' }}>
             <Col sm={6} style={{ marginBottom: '10px' }}>
               <Form.Group>
@@ -103,7 +103,7 @@ function EventFormApp() {
           </Row>
 
           <Row style={{ width: '800px' }}>
-            <Col sm={6} style={{ marginBottom: '10px' }}>
+            <Col sm={6} style={{ marginBottom: '10px', width: '300px', display: 'flex' }}>
               <FloatingLabel controlId='eventStartDateLabel' label='Event start date'>
                 <DatePicker 
                   selectsStart
@@ -117,7 +117,7 @@ function EventFormApp() {
                 />
               </FloatingLabel>
             </Col>
-            <Col sm={6} style={{ marginBottom: '10px' }}>
+            <Col sm={6} style={{ marginBottom: '10px', width: '300px', display: 'flex' }}>
               <FloatingLabel controlId='eventEndDateLabel' label='Event end date'>
                 <DatePicker
                   selectsEnd
@@ -128,7 +128,6 @@ function EventFormApp() {
                   minDate={startDate}
                   className="form-control"
                   wrapperClassName="form-control"
-                  style={{ width: '300px' }}
                   required
                 />
               </FloatingLabel>
