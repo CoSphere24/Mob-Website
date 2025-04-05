@@ -50,11 +50,11 @@ function EventFormApp() {
         </h2>
         <br/><br/>
         <Container fluid>
-          <Row>
+          <Row style={{ width: '800px' }}>
             <Col sm={6} style={{ marginBottom: '10px' }}>
               <Form.Group>
                 <FloatingLabel controlId='firstnamLabel' label='First name'>
-                  <Form.Control type='text' required />
+                  <Form.Control type='text' style={{ width: '300px' }} required />
                 </FloatingLabel>
                 <Form.Control.Feedback type='invalid'>
                   Do not leave empty
@@ -63,7 +63,7 @@ function EventFormApp() {
             </Col>
             <Col sm={6} style={{ marginBottom: '10px' }}>
               <FloatingLabel controlId='lastnameLabel' label='Last name'>
-                <Form.Control type='text' required />
+                <Form.Control type='text' style={{ width: '300px' }} required />
               </FloatingLabel>
             </Col>
           </Row>
@@ -102,7 +102,7 @@ function EventFormApp() {
             </Col>
           </Row>
 
-          <Row>
+          <Row style={{ width: '800px' }}>
             <Col sm={6} style={{ marginBottom: '10px' }}>
               <FloatingLabel controlId='eventStartDateLabel' label='Event start date'>
                 <DatePicker 
@@ -112,6 +112,7 @@ function EventFormApp() {
                   startDate={startDate}
                   className="form-control"
                   wrapperClassName="form-control"
+                  style={{ width: '300px' }}
                   required
                 />
               </FloatingLabel>
@@ -127,13 +128,14 @@ function EventFormApp() {
                   minDate={startDate}
                   className="form-control"
                   wrapperClassName="form-control"
+                  style={{ width: '300px' }}
                   required
                 />
               </FloatingLabel>
             </Col>
           </Row>
 
-          <Row>
+          <Row style={{ width: '800px' }}>
             <Col sm={6} style={{ marginBottom: '10px' }}>
               <FloatingLabel controlId='eventStartTimeLabel' label='Event start time'>
                 <TimePicker 
