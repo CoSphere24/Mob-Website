@@ -103,7 +103,7 @@ function EventFormApp() {
           </Row>
 
           <Row style={{ width: '800px' }}>
-            <Col sm={6} style={{ marginBottom: '10px', width: '300px', display: 'flex' }}>
+            <Col sm={6} style={{ marginBottom: '10px', width: '150px', display: 'flex' }}>
               <FloatingLabel controlId='eventStartDateLabel' label='Event start date'>
                 <DatePicker 
                   selectsStart
@@ -112,12 +112,12 @@ function EventFormApp() {
                   startDate={startDate}
                   className="form-control"
                   wrapperClassName="form-control"
-                  style={{ width: '300px' }}
+                  style={{ width: '150px' }}
                   required
                 />
               </FloatingLabel>
             </Col>
-            <Col sm={6} style={{ marginBottom: '10px', width: '300px', display: 'flex' }}>
+            <Col sm={6} style={{ marginBottom: '10px', width: '150px', display: 'flex' }}>
               <FloatingLabel controlId='eventEndDateLabel' label='Event end date'>
                 <DatePicker
                   selectsEnd
@@ -128,6 +128,7 @@ function EventFormApp() {
                   minDate={startDate}
                   className="form-control"
                   wrapperClassName="form-control"
+                  style={{ width: '150px' }}
                   required
                 />
               </FloatingLabel>
