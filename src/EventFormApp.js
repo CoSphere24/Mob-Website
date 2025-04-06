@@ -230,7 +230,7 @@ function EventFormApp() {
           <Row>
             <Col sm={6} style={{ marginBottom: '10px' }}>
               <Form.Group controlId="formFile" className="mb-3">
-                <FloatingLabel controlId='eventImageLabel' label='Event image <br> (must be horizontal 16:9 ratio, min 1600 x 900 px)'>
+                <FloatingLabel controlId='eventImageLabel' label='Event image <br></br> (must be horizontal 16:9 ratio, min 1600 x 900 px)'>
                   <Form.Control type="file" required />
                 </FloatingLabel>
               </Form.Group>
