@@ -102,7 +102,7 @@ function EventFormApp() {
             </Col>
           </Row>
 
-          <Row style={{ width: '800px' }}>
+          <Row style={{ width: '500px' }}>
             <Col sm={6} style={{ marginBottom: '10px', width: '150px', display: 'flex' }}>
               <FloatingLabel controlId='eventStartDateLabel' label='Event start date' style={{ width: '150px' }}>
                 <DatePicker 
@@ -135,7 +135,7 @@ function EventFormApp() {
             </Col>
           </Row>
 
-          <Row style={{ width: '800px' }}>
+          <Row style={{ width: '500px' }}>
             <Col sm={6} style={{ marginBottom: '10px' }}>
               <FloatingLabel controlId='eventStartTimeLabel' label='Event start time'>
                 <TimePicker 
