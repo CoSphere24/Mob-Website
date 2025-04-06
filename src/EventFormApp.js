@@ -235,7 +235,7 @@ function EventFormApp() {
                       <span>Event image <br></br> 
                       (must be horizontal 16:9 ratio, min 1600 x 900 px)
                       </span>
-                    }
+                    }>
                   <Form.Control type="file" required />
                 </FloatingLabel>
               </Form.Group>
