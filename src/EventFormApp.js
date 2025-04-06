@@ -104,7 +104,7 @@ function EventFormApp() {
 
           <Row style={{ width: '800px' }}>
             <Col sm={6} style={{ marginBottom: '10px', width: '150px', display: 'flex' }}>
-              <FloatingLabel controlId='eventStartDateLabel' label='Event start date'>
+              <FloatingLabel controlId='eventStartDateLabel' label='Event start date' style={{ width: '150px' }}>
                 <DatePicker 
                   selectsStart
                   selected={startDate}
