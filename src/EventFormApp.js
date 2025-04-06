@@ -118,7 +118,7 @@ function EventFormApp() {
               </FloatingLabel>
             </Col>
             <Col sm={6} style={{ marginBottom: '10px', width: '150px', display: 'flex' }}>
-              <FloatingLabel controlId='eventEndDateLabel' label='Event end date'>
+              <FloatingLabel controlId='eventEndDateLabel' label='Event end date' style={{ width: '150px' }}>
                 <DatePicker
                   selectsEnd
                   selected={endDate}
